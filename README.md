@@ -12,6 +12,8 @@ Features
 🎨 Tailwind CSS styling
 ⚡ Fast development with Vite
 🧩 Reusable React components
+
+
 Technologies Used
 React.js
 Vite
