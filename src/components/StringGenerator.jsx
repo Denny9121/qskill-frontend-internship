@@ -1,0 +1,2 @@
+import {useState,useCallback,useEffect} from "react";
+export default function StringGenerator(){const[len,setLen]=useState(12);const[s,setS]=useState("");const gen=useCallback(()=>{const c="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";let r="";for(let i=0;i<len;i++)r+=c[Math.floor(Math.random()*c.length)];setS(r)},[len]);useEffect(()=>gen(),[gen]);return(<div><h2>Random String Generator</h2><p>{s}</p><input type="range" min="6" max="30" value={len} onChange={e=>setLen(+e.target.value)}/><button onClick={gen}>Regenerate</button></div>)}

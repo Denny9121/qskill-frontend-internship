@@ -1,0 +1,1 @@
+import {useState} from "react";export default function Translator(){const[t,setT]=useState("");return(<div><h2>Translator</h2><textarea value={t} onChange={e=>setT(e.target.value)}/><p>API key required to enable translation.</p></div>)}
